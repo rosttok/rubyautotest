@@ -20,9 +20,7 @@ describe "Create_projects" do
   end
 
   it "test_Create_projects" do #steps
-    @driver.get(@base_url) #go to demo-server
-    @driver.find_element(:link, "Management").click
-    @driver.find_element(:xpath, "//li[1]/a/span").click #go to project managment page
+    @driver.get(@base_url + "#/management/project") #go to demo-server project page
     @driver.find_element(:link, "CREATE NEW PROJECT").click #click button "create new project"
     @driver.find_element(:name, "name").clear # select field "name"
     @driver.find_element(:name, "name").send_keys "project1" # fill field "name"

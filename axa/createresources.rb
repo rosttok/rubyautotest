@@ -20,9 +20,7 @@ describe "Create_resources" do
   end
 
   it "test_Create_resources" do #steps
-    @driver.get(@base_url) #go to demo-server
-    @driver.find_element(:link, "Management").click
-    @driver.find_element(:xpath, "//li[2]/a/span").click #go to resources managment page
+    @driver.get(@base_url + "#/management/resources") #go to demo-server resource page
     @driver.find_element(:link, "CREATE NEW RESOURCE").click # button "create new resource"
     @driver.find_element(:name, "name").click # resource name
     @driver.find_element(:name,"name").send_keys "resource1"
@@ -51,6 +49,7 @@ describe "Create_resources" do
     @driver.find_element(:xpath, "(//button[@type='button'])[84]").click
     @driver.find_element(:xpath, "(//input [@type='checkbox'])[3]").click #checkbox yes AXA permision
     @driver.find_element(:xpath , "(//button[3])").click # button create
+    @driver.find_element(:link, "CREATE NEW RESOURCE").click
     @driver.find_element(:name, "name").click # resource name
     @driver.find_element(:name,"name").send_keys "resource3"
     @driver.find_element(:xpath, "(//input [@type='checkbox'])[1]").click # checkbox internal
@@ -64,6 +63,7 @@ describe "Create_resources" do
     @driver.find_element(:xpath, "(//button[@type='button'])[84]").click
     @driver.find_element(:xpath, "(//input [@type='checkbox'])[3]").click #checkbox yes AXA permision
     @driver.find_element(:xpath , "(//button[3])").click # button create
+    @driver.find_element(:link, "CREATE NEW RESOURCE").click
     @driver.find_element(:name, "name").click # resource name
     @driver.find_element(:name,"name").send_keys "resource4"
     @driver.find_element(:xpath, "(//input [@type='checkbox'])[1]").click # checkbox internal
@@ -77,6 +77,7 @@ describe "Create_resources" do
     @driver.find_element(:xpath, "(//button[@type='button'])[84]").click
     @driver.find_element(:xpath, "(//input [@type='checkbox'])[3]").click #checkbox yes AXA permision
     @driver.find_element(:xpath , "(//button[3])").click # button create
+    @driver.find_element(:link, "CREATE NEW RESOURCE").click
     @driver.find_element(:name, "name").click # resource name
     @driver.find_element(:name,"name").send_keys "resource5"
     @driver.find_element(:xpath, "(//input [@type='checkbox'])[1]").click # checkbox internal
@@ -90,6 +91,7 @@ describe "Create_resources" do
     @driver.find_element(:xpath, "(//button[@type='button'])[84]").click
     @driver.find_element(:xpath, "(//input [@type='checkbox'])[3]").click #checkbox yes AXA permision
     @driver.find_element(:xpath , "(//button[3])").click # button create
+    @driver.find_element(:link, "CREATE NEW RESOURCE").click
     @driver.find_element(:name, "name").click # resource name
     @driver.find_element(:name,"name").send_keys "resource6"
     @driver.find_element(:xpath, "(//input [@type='checkbox'])[1]").click # checkbox internal
@@ -103,19 +105,7 @@ describe "Create_resources" do
     @driver.find_element(:xpath, "(//button[@type='button'])[84]").click
     @driver.find_element(:xpath, "(//input [@type='checkbox'])[3]").click #checkbox yes AXA permision
     @driver.find_element(:xpath , "(//button[3])").click # button create
-    @driver.find_element(:name, "name").click # resource name
-    @driver.find_element(:name,"name").send_keys "resource6"
-    @driver.find_element(:xpath, "(//input [@type='checkbox'])[1]").click # checkbox internal
-    @driver.find_element(:xpath, "(//input [@type='text'])[2]").click#calendar(from)
-    @driver.find_element(:xpath, "(//button[@type='button'])[2]").click
-    @driver.find_element(:xpath, "(//button[@type='button'])[4]").click
-    @driver.find_element(:xpath, "(//button[@type='button'])[8]").click
-    @driver.find_element(:xpath, "(//input[@type='text'])[3]").click #calendar(to)
-    @driver.find_element(:xpath, "(//button[@type='button'])[50]").click
-    @driver.find_element(:xpath, "(//button[@type='button'])[63]").click
-    @driver.find_element(:xpath, "(//button[@type='button'])[84]").click
-    @driver.find_element(:xpath, "(//input [@type='checkbox'])[3]").click #checkbox yes AXA permision
-    @driver.find_element(:xpath , "(//button[3])").click # button create
+    @driver.find_element(:link, "CREATE NEW RESOURCE").click
     @driver.find_element(:name, "name").click # resource name
     @driver.find_element(:name,"name").send_keys "resource7"
     @driver.find_element(:xpath, "(//input [@type='checkbox'])[1]").click # checkbox internal
@@ -129,6 +119,7 @@ describe "Create_resources" do
     @driver.find_element(:xpath, "(//button[@type='button'])[84]").click
     @driver.find_element(:xpath, "(//input [@type='checkbox'])[3]").click #checkbox yes AXA permision
     @driver.find_element(:xpath , "(//button[3])").click # button create
+    @driver.find_element(:link, "CREATE NEW RESOURCE").click
     @driver.find_element(:name, "name").click # resource name
     @driver.find_element(:name,"name").send_keys "resource8"
     @driver.find_element(:xpath, "(//input [@type='checkbox'])[1]").click # checkbox internal
@@ -142,6 +133,7 @@ describe "Create_resources" do
     @driver.find_element(:xpath, "(//button[@type='button'])[84]").click
     @driver.find_element(:xpath, "(//input [@type='checkbox'])[3]").click #checkbox yes AXA permision
     @driver.find_element(:xpath , "(//button[3])").click # button create
+    @driver.find_element(:link, "CREATE NEW RESOURCE").click
     @driver.find_element(:name, "name").click # resource name
     @driver.find_element(:name,"name").send_keys "resource9"
     @driver.find_element(:xpath, "(//input [@type='checkbox'])[1]").click # checkbox internal
@@ -155,6 +147,7 @@ describe "Create_resources" do
     @driver.find_element(:xpath, "(//button[@type='button'])[84]").click
     @driver.find_element(:xpath, "(//input [@type='checkbox'])[3]").click #checkbox yes AXA permision
     @driver.find_element(:xpath , "(//button[3])").click # button create
+    @driver.find_element(:link, "CREATE NEW RESOURCE").click
     @driver.find_element(:name, "name").click # resource name
     @driver.find_element(:name,"name").send_keys "resource10"
     @driver.find_element(:xpath, "(//input [@type='checkbox'])[1]").click # checkbox internal
