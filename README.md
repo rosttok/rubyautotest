@@ -2,6 +2,7 @@
 ------------------------------------
 Test created on Ruby
 ------------------------------------
+require "json"
 require "selenium-webdriver"
 require "rspec"
 ------------------------------------
