@@ -1,9 +1,9 @@
-# Test created on Ruby
+# Test created on Ruby 2.2.2
 
 # In folder axa have two tests "Create projects and resources" and chrome webdriver
 
 # 1.Install Ruby
-* sudo apt-get install ruby
+* https://rvm.io/rvm/install
 
 # 2.Install gem selenium-webdriver
 * gem install selenium-webdriver
