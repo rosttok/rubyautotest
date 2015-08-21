@@ -1,8 +1,8 @@
-# Test created on Ruby 
+# Test created on Ruby
 
-# require "json" ,require "selenium-webdriver", require "rspec" 
+# require "json" ,require "selenium-webdriver", require "rspec"
 
-# In folder axa have two tests "Create projects and resources" and chrome webdriver 
+# In folder axa have two tests "Create projects and resources" and chrome webdriver
 
 # 1. createprojects.rb
 * Create 10 projects:
@@ -18,4 +18,9 @@
 * within AXA promises
 * contract: 1/1/15 - 31/12/15
 
-# 3. chrome webdriver now not used (will be integrated in future )
+# 3.Install ChromeDriver:
+
+* chmod +x chromedriver
+* sudo mv -f chromedriver /usr/local/share/chromedriver
+* sudo ln -s /usr/local/share/chromedriver /usr/local/bin/chromedriver
+* sudo ln -s /usr/local/share/chromedriver /usr/bin/chromedriver
