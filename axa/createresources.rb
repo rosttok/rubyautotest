@@ -7,7 +7,7 @@ include RSpec::Expectations
 describe "Create_resources" do
 
   before(:each) do #run a selenium-webdriver
-    @driver = Selenium::WebDriver.for :firefox
+    @driver = Selenium::WebDriver.for :chrome
     @base_url = "http://52.17.174.169/"
     @accept_next_alert = true
     @driver.manage.timeouts.implicit_wait = 30
