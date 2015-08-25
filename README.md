@@ -17,11 +17,12 @@
 # How to run test
 * ruby createprojects.rb n (n its number how many you wanna create projects)
 * ruby createresources.rb n (n its number how many you wanna create resources)
+* ruby deleteprojects.rb n (n its number how many you wanna delete projects)
 
 # What test do
 
 # 1. createprojects.rb
-* Create projects:
+* Create projects 
 * name: project1,project2,...,project(n)
 * wbs: wbs1,wbs2,...,wbs(n)
 * dates: 1/1/15 - 31/12/15
@@ -33,3 +34,6 @@
 * intern
 * within AXA promises
 * contract: 1/1/15 - 31/12/15
+
+# 3 deleteprojects.rb
+* Delete  project from top to bottom (Can't delete project what have added resource(s))
