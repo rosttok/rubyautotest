@@ -10,14 +10,10 @@ repeat = ARGV.join('')
 @driver.get(@base_url + "#/management/project") #go to demo-server project page
 
 
-<<<<<<< HEAD
+
 def edit_project_1
   sleep 1
   @driver.find_element(:xpath,("//li[@class='list-group-item ng-binding ng-scope'][#{@min}]")).click # chose first project from the list
-=======
-def edit_project
-  @driver.find_element(:xpath,("//li[@class='list-group-item ng-binding ng-scope'][1]")).click # chose first project from the list
->>>>>>> 93ec6b1bd8e61cc32fffee61b516d1513ab0ff23
   sleep 1
   @driver.find_element(:xpath,("//button[@class='btn btn-axa-default'][1]")).click # click edit button
   sleep 1
