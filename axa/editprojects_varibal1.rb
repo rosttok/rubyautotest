@@ -29,7 +29,7 @@ def edit_project_1
   week = 1
 
     while week <= 53 do
-      random = rand(0.01...5.00)
+      random = rand(0.01...4.99)
       r = random.round 2
       @driver.find_element(:name, "week[#{@arg1}W#{week}]").clear
       @driver.find_element(:name, "week[#{@arg1}W#{week}]").send_keys "#{r}"
