@@ -13,15 +13,16 @@ repeat = ARGV.join('')
 
 def edit_project_1
   sleep 1
-  @driver.find_element(:xpath,("//li[@class='list-group-item ng-binding ng-scope'][#{@min}]")).click # chose first project from the list
+  @driver.find_element(:xpath, ("//li[@class='list-group-item ng-binding ng-scope'][#{@min}]")).click # chose first project from the list
   sleep 1
-  @driver.find_element(:xpath,("//button[@class='btn btn-axa-default'][1]")).click # click edit button
+  @driver.find_element(:xpath, ("//button[@class='btn btn-axa-default'][1]")).click # click edit button
   sleep 1
 
+  @a = 1
   @arg1 = 0
   @arg2 = 2
-  @a = 1
   while @arg1 <= @arg2 do
+
   @driver.find_element(:xpath,("//li[@class='list-group-item list-resources-item ng-scope'][#{@a}]/span[@class='resource-name ng-binding']")).click
   sleep 1
 
@@ -35,13 +36,14 @@ def edit_project_1
       week += 1
     end
   @arg1 += 1
-
+  @a += 1
   end
 
   sleep 1
   @driver.find_element(:xpath,("//div[@class='modal-footer']/button[@class='btn btn-modal-success']")).click # click save button on edit popup
   sleep 1
   @driver.get(@base_url + "#/management/project")
+
 end
 
 while @min <= @max do
