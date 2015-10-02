@@ -15,7 +15,7 @@ sleep 2
 @driver.find_element(:name, "name").clear # resource name
 @driver.find_element(:name, "name").send_keys "admin"
 @driver.find_element(:name, "staffingGroup").clear
-@driver.find_element(:name, "staffingGroup").send_keys "a"
+@driver.find_element(:name, "staffingGroup").send_keys "Others"
 @driver.find_element(:xpath,"(//li[@class='axa-suggestion-item matches-box ng-binding ng-scope'][1])").click
 @driver.find_element(:xpath, "(//div[@class='axa-suggestion-actions']/button[@class='btn btn-axa-default'][1])").click
 @driver.find_element(:id, "dropdownScope0").click # select RESOURCE TYPE
@@ -39,7 +39,7 @@ def create_resources
   @driver.find_element(:name, "name").clear # resource name
   @driver.find_element(:name, "name").send_keys "resource#@min#@time"
   @driver.find_element(:name, "staffingGroup").clear
-  @driver.find_element(:name, "staffingGroup").send_keys "a"
+  @driver.find_element(:name, "staffingGroup").send_keys "Others"
   @driver.find_element(:xpath,"(//li[@class='axa-suggestion-item matches-box ng-binding ng-scope'][1])").click
   @driver.find_element(:xpath, "(//div[@class='axa-suggestion-actions']/button[@class='btn btn-axa-default'][1])").click
   @driver.find_element(:id, "dropdownScope0").click # select RESOURCE TYPE
